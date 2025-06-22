@@ -31,7 +31,7 @@ body {
 
 .post-title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
@@ -39,7 +39,7 @@ body {
 
 .post-content {
     font-family: "Times New Roman", Times, serif;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.1rem;
     margin-bottom: 20px;
     color: #555;
