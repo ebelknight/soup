@@ -22,10 +22,10 @@ body {
 /* Typography */
 .site-title {
     font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 20px;
     color: #333;
 }
 
@@ -46,6 +46,36 @@ body {
     line-height: 1.8;
 }
 
+/* Navigation */
+.navigation {
+    margin-bottom: 30px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+.nav-link.active {
+    color: #333;
+    border-bottom-color: #333;
+}
+
 /* Layout */
 .header {
     margin-bottom: 40px;
@@ -57,19 +87,16 @@ body {
     margin-bottom: 40px;
 }
 
+.section {
+    margin-bottom: 30px;
+}
+
 .post {
-    background: #f9f9f9;
-    padding: 30px;
-    border-radius: 5px;
-    border-left: 4px solid #333;
+    margin-bottom: 30px;
 }
 
 .footer {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    color: #666;
-    font-size: 0.9rem;
+    display: none;
 }
 
 /* Responsive Design */
@@ -94,7 +121,11 @@ body {
         font-size: 1rem;
     }
     
-    .post {
-        padding: 20px;
+    .nav-list {
+        gap: 20px;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
     }
 } 
